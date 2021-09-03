@@ -26,6 +26,7 @@ function timeConverter(UNIX_timestamp){
     var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
     return time;
   }
+
 const fetchPrice=async(ctype)=>{
    const r = await axios.get(`https://api.cryptonator.com/api/ticker/${ctype}`) ;
    const price = r.data.ticker.price;
